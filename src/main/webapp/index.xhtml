@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head></h:head>
+<h:body>
+
+	<h:form>
+		<h:panelGrid>
+			<h:outputLabel value="Nome/Identificador" />
+			<h:inputText value="#{timerController.calendario.nome}" />
+		
+			<h:outputLabel value="Hora" />
+			<h:inputText value="#{timerController.calendario.hora}" />
+
+			<h:outputLabel value="Minuto" />
+			<h:inputText value="#{timerController.calendario.minuto}" />
+
+			<h:outputLabel value="Segundo" />
+			<h:inputText value="#{timerController.calendario.segundo}" />
+
+			<h:commandButton action="#{timerController.agendar()}"
+				value="agendar" />
+		</h:panelGrid>
+	</h:form>
+
+</h:body>
+</html>
